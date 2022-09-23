@@ -1,0 +1,12 @@
+body {
+  background: #2f363e;
+  color: #fff;
+}
+h2 {
+  color: red;
+}
+
+h1,
+h2 {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.702);
+}
