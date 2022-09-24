@@ -1,13 +1,16 @@
-import { Fragment } from "react";
-import NavBar from "./components/NavBar";
-import ResponsiveAppBar from "./components/NavBar2";
+import Button from "@mui/material/Button";
 
 function App() {
   return (
-    <Fragment>
-      <NavBar />
-      <ResponsiveAppBar />
-    </Fragment>
+    <div className="d-flex justify-content-center align-items-center vh-100 text-center">
+      <div className="text">
+        <h2 className="text-shadow">SR Blood</h2>
+        <br />
+        <h1>Under Constraction</h1>
+        <br />
+        <Button variant="contained">Hello World</Button>
+      </div>
+    </div>
   );
 }
 
