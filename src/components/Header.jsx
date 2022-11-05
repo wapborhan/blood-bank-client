@@ -1,108 +1,106 @@
-import React from "react";
+import { useState } from "react";
 
-const Header = () => {
+export default function NavBar() {
+  const [navbar, setNavbar] = useState(false);
+
   return (
-    <div class="fixed-top">
-      <header class="topbar">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <ul class="social-network">
-                <li>
-                  <a class="waves-effect waves-dark" href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect waves-dark" href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect waves-dark" href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect waves-dark" href="#">
-                    <i class="fa fa-pinterest"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect waves-dark" href="#">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </li>
-              </ul>
+    <nav className="w-full bg-purple-500 shadow">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div>
+          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <a href="javascript:void(0)">
+              <h2 className="text-2xl font-bold text-white">SR Blood</h2>
+            </a>
+            <div className="md:hidden">
+              <button
+                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                onClick={() => setNavbar(!navbar)}
+              >
+                {navbar ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                )}
+              </button>
             </div>
           </div>
         </div>
-      </header>
-      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
-        <div class="container">
-          <a class="navbar-brand text-transform-uppercase" href="#">
-            SR Blood
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <div>
+          <div
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  Home
-                </a>
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <li className="text-white hover:text-indigo-200">
+                <a href="javascript:void(0)">Home</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  About
-                </a>
+              <li className="text-white hover:text-indigo-200">
+                <a href="javascript:void(0)">Blog</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Fruits
-                </a>
+              <li className="text-white hover:text-indigo-200">
+                <a href="javascript:void(0)">About US</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Sea food
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Vegetables
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Blog
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Contact
-                </a>
+              <li className="text-white hover:text-indigo-200">
+                <a href="javascript:void(0)">Contact US</a>
               </li>
             </ul>
+
+            <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+              <a
+                href="javascript:void(0)"
+                className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+              >
+                Sign in
+              </a>
+              <a
+                href="javascript:void(0)"
+                className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+              >
+                Sign up
+              </a>
+            </div>
           </div>
         </div>
-      </nav>
-    </div>
+        <div className="hidden space-x-2 md:inline-block">
+          <a
+            href="javascript:void(0)"
+            className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
+          >
+            Sign in
+          </a>
+          <a
+            href="javascript:void(0)"
+            className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
+          >
+            Sign up
+          </a>
+        </div>
+      </div>
+    </nav>
   );
-};
-
-export default Header;
+}
