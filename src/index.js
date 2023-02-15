@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "../src/index.css";
+import "./assets/stylesheet/oxpins.css";
+import "./assets/stylesheet/oxpins-responsive.css";
+import "./assets/stylesheet/oxpins-dark.css";
+import "./assets/stylesheet/styles.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
