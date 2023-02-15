@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoond671.eot?gfq9l4');
+  src:  url('fonts/icomoond671.eot?gfq9l4#iefix') format('embedded-opentype'),
+    url('fonts/icomoond671.ttf?gfq9l4') format('truetype'),
+    url('fonts/icomoond671.woff?gfq9l4') format('woff'),
+    url('fonts/icomoond671.svg?gfq9l4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-avatar:before {
+  content: "\e91c";
+}
+.icon-phone-call:before {
+  content: "\e900";
+}
+.icon-message:before {
+  content: "\e901";
+}
+.icon-location:before {
+  content: "\e902";
+}
+.icon-magnifying-glass:before {
+  content: "\e903";
+}
+.icon-shopping-cart:before {
+  content: "\e904";
+}
+.icon-volunteer:before {
+  content: "\e905";
+}
+.icon-right-arrow:before {
+  content: "\e906";
+}
+.icon-left-arrow:before {
+  content: "\e907";
+}
+.icon-up-arrow:before {
+  content: "\e908";
+}
+.icon-down-arrow:before {
+  content: "\e909";
+}
+.icon-solidarity:before {
+  content: "\e90a";
+}
+.icon-gift-box:before {
+  content: "\e90b";
+}
+.icon-double-quotes:before {
+  content: "\e90c";
+}
+.icon-apple:before {
+  content: "\e90d";
+}
+.icon-health-insurance:before {
+  content: "\e90e";
+}
+.icon-business-partnership:before {
+  content: "\e90f";
+}
+.icon-target:before {
+  content: "\e910";
+}
+.icon-solidarity-1:before {
+  content: "\e911";
+}
+.icon-charity:before {
+  content: "\e912";
+}
+.icon-generous:before {
+  content: "\e913";
+}
+.icon-fundraiser:before {
+  content: "\e914";
+}
+.icon-chat:before {
+  content: "\e915";
+}
+.icon-bonus:before {
+  content: "\e916";
+}
+.icon-fingerprint-scan:before {
+  content: "\e917";
+}
+.icon-account:before {
+  content: "\e918";
+}
+.icon-charity-1:before {
+  content: "\e919";
+}
+.icon-target-1:before {
+  content: "\e91a";
+}
+.icon-help:before {
+  content: "\e91b";
+}
