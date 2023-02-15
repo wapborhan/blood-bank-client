@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 
 export default function NavBar() {
   return (
@@ -7,9 +7,10 @@ export default function NavBar() {
         <div className="main-menu__wrapper">
           <div className="main-menu__wrapper-inner">
             <div className="main-menu__left">
-              <div className="main-menu__logo">
-                <a href="index.html">
+              <div className="main-menu__logo text-white">
+                <a href="#">
                   <img src="assets/images/resources/logo-2.png" alt="" />
+                  SR Blood Bank
                 </a>
               </div>
               <div className="main-menu__shape-1 float-bob-x">
