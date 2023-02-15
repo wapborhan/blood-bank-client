@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sr-blood/static/css/main.5935fbdd.css",
-    "main.js": "/sr-blood/static/js/main.acc893dd.js",
-    "static/js/787.ece07cec.chunk.js": "/sr-blood/static/js/787.ece07cec.chunk.js",
-    "index.html": "/sr-blood/index.html",
-    "main.5935fbdd.css.map": "/sr-blood/static/css/main.5935fbdd.css.map",
-    "main.acc893dd.js.map": "/sr-blood/static/js/main.acc893dd.js.map",
-    "787.ece07cec.chunk.js.map": "/sr-blood/static/js/787.ece07cec.chunk.js.map"
+    "main.css": "/sr-blood-bank/static/css/main.5935fbdd.css",
+    "main.js": "/sr-blood-bank/static/js/main.d54e947d.js",
+    "static/js/787.ece07cec.chunk.js": "/sr-blood-bank/static/js/787.ece07cec.chunk.js",
+    "index.html": "/sr-blood-bank/index.html",
+    "main.5935fbdd.css.map": "/sr-blood-bank/static/css/main.5935fbdd.css.map",
+    "main.d54e947d.js.map": "/sr-blood-bank/static/js/main.d54e947d.js.map",
+    "787.ece07cec.chunk.js.map": "/sr-blood-bank/static/js/787.ece07cec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5935fbdd.css",
-    "static/js/main.acc893dd.js"
+    "static/js/main.d54e947d.js"
   ]
 }
