@@ -1,4 +1,5 @@
 import React from "react";
+import Evnimg1 from "../../assets/images/events/events-1-1.jpg";
 
 const index = () => {
   return (
@@ -59,7 +60,7 @@ const index = () => {
                   {/* <!--Events One Single Start--> */}
                   <div className="events-one__single">
                     <div className="events-one__img">
-                      <img src="assets/images/events/events-1-1.jpg" alt="" />
+                      <img src={Evnimg1} alt="" />
                       <div className="events-one__date">
                         <p>23 May, 2022</p>
                       </div>
