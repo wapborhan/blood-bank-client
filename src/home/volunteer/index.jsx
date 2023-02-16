@@ -1,4 +1,6 @@
 import React from "react";
+import BecomeVoln from "../../assets/images/backgrounds/become-volunteer-one-bg.jpg";
+import VolnShape from "../../assets/images/shapes/become-volunteer-shape-1-dark.png";
 
 const index = () => {
   return (
@@ -9,12 +11,12 @@ const index = () => {
           data-jarallax
           data-speed="0.2"
           data-imgPosition="50% 0%"
-          // style="background-image: url(assets/images/backgrounds/become-volunteer-one-bg.jpg);"
+          style={{ backgroundImage: `url(${BecomeVoln})` }}
         ></div>
       </div>
       <div
         className="become-volunteer-one__shape-1"
-        // style="background-image: url(assets/images/shapes/become-volunteer-shape-1-dark.png);"
+        style={{ backgroundImage: `url(${VolnShape})` }}
       ></div>
       <div className="container">
         <div className="become-volunteer-one__inner">

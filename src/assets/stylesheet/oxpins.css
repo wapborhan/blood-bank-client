@@ -17,6 +17,7 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+
 :root {
   --oxpins-font: "Manrope", sans-serif;
   --oxpins-font-two: "Nunito", sans-serif;
@@ -836,8 +837,8 @@ ul {
   color: var(--oxpins-black);
   background-color: var(--oxpins-primary);
   padding-left: 50px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 19px;
+  padding-bottom: 19px;
   position: relative;
   display: flex;
   align-items: center;
@@ -2441,8 +2442,8 @@ body.locked .page-wrapper {
 
 .main-slider .container {
   position: relative;
-  padding-top: 170px;
-  padding-bottom: 175px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   z-index: 30;
 }
 
@@ -2523,10 +2524,10 @@ body.locked .page-wrapper {
 
 .main-slider__title {
   position: relative;
-  font-size: 80px;
+  font-size: 70px;
   color: var(--oxpins-white);
   font-weight: 900;
-  line-height: 83px;
+  line-height: 65px;
   letter-spacing: -0.04em;
   margin-top: 24px;
   margin-bottom: 26px;
@@ -5053,7 +5054,7 @@ body.locked .page-wrapper {
 .site-footer__top {
   position: relative;
   display: block;
-  padding: 100px 0 98px;
+  padding: 50px 0 50px;
 }
 
 .footer-widget__about {

@@ -1,4 +1,7 @@
 import React from "react";
+import Logo from "../../assets/images/resources/logo-2.png";
+import { FiPhoneCall } from "react-icons/fi";
+import { GoMailRead } from "react-icons/go";
 
 export default function NavBar() {
   return (
@@ -9,8 +12,7 @@ export default function NavBar() {
             <div className="main-menu__left">
               <div className="main-menu__logo text-white">
                 <a href="#">
-                  <img src="assets/images/resources/logo-2.png" alt="" />
-                  SR Blood Bank
+                  <img src={Logo} alt="" />
                 </a>
               </div>
               <div className="main-menu__shape-1 float-bob-x">
@@ -41,10 +43,12 @@ export default function NavBar() {
                     <ul className="list-unstyled main-menu__right-top-address-list">
                       <li>
                         <div className="icon">
-                          <span className="icon-phone-call"></span>
+                          <span className="icon-phone-call">
+                            <FiPhoneCall />
+                          </span>
                         </div>
                         <div className="content">
-                          <p>Helpline</p>
+                          <p className="mb-0">Helpline</p>
                           <h5>
                             <a href="tel:980009630">+ 98 (000) - 9630</a>
                           </h5>
@@ -52,10 +56,12 @@ export default function NavBar() {
                       </li>
                       <li>
                         <div className="icon">
-                          <span className="icon-message"></span>
+                          <span className="icon-message">
+                            <GoMailRead />
+                          </span>
                         </div>
                         <div className="content">
-                          <p>Send email</p>
+                          <p className="mb-0">Send email</p>
                           <h5>
                             <a href="mailto:needhelp@company.com">
                               needhelp@company.com
@@ -68,7 +74,7 @@ export default function NavBar() {
                           <span className="icon-location"></span>
                         </div>
                         <div className="content">
-                          <p>380 St Kilda Road</p>
+                          <p className="mb-0">380 St Kilda Road</p>
                           <h5>Melbourne, Australia</h5>
                         </div>
                       </li>

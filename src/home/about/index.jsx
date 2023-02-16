@@ -1,12 +1,19 @@
 import React from "react";
-
+import ShapeImg from "../../assets/images/shapes/about-one-shape-1.png";
+import ShapeImg2 from "../../assets/images/shapes/about-one-shape-2.png";
+import ShapeImg3Drk from "../../assets/images/shapes/about-one-shape-3-dark.png";
+import ShapeImg4 from "../../assets/images/shapes/about-one-shape-4.png";
+import AboutImg from "../../assets/images/resources/about-one-img-1.jpg";
+import CircleImg from "../../assets/images/icon/curved-circle-icon.png";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
+import { FaHands } from "react-icons/fa";
 const index = () => {
   return (
     <section className="about-one">
       <div className="about-one__shape-box-1">
         <div
           className="about-one__shape-1"
-          // style="background-image: url(assets/images/shapes/about-one-shape-1.png);"
+          style={{ backgroundImage: `url(${ShapeImg})` }}
         ></div>
       </div>
       <div className="container">
@@ -19,43 +26,28 @@ const index = () => {
                 data-wow-duration="2500ms"
               >
                 <div className="about-one__img">
-                  <img
-                    src="assets/images/resources/about-one-img-1.jpg"
-                    alt=""
-                  />
+                  <img src={AboutImg} alt="" />
                 </div>
                 <div className="about-one__img-border"></div>
                 <div className="about-one__curved-circle-box">
                   <div className="curved-circle">
-                    <span className="curved-circle--item">
+                    {/* <span className="curved-circle--item">
                       25 Years Experience oxpins Charity Center
-                    </span>
+                    </span> */}
                   </div>
 
                   <div className="about-one__curved-circle-icon">
-                    <img
-                      src="assets/images/icon/curved-circle-icon.png"
-                      alt=""
-                    />
+                    <img src={CircleImg} alt="" />
                   </div>
                 </div>
                 <div className="about-one__shape-2 zoom-fade">
-                  <img
-                    src="assets/images/shapes/about-one-shape-2.png"
-                    alt=""
-                  />
+                  <img src={ShapeImg2} alt="" />
                 </div>
                 <div className="about-one__shape-3 float-bob-y">
-                  <img
-                    src="assets/images/shapes/about-one-shape-3-dark.png"
-                    alt=""
-                  />
+                  <img src={ShapeImg3Drk} alt="" />
                 </div>
                 <div className="about-one__shape-4 zoominout">
-                  <img
-                    src="assets/images/shapes/about-one-shape-4.png"
-                    alt=""
-                  />
+                  <img src={ShapeImg4} alt="" />
                 </div>
               </div>
             </div>
@@ -87,7 +79,9 @@ const index = () => {
               <ul className="list-unstyled about-one__points">
                 <li>
                   <div className="icon">
-                    <span className="icon-volunteer"></span>
+                    <span className="icon-volunteer">
+                      <MdOutlineVolunteerActivism />
+                    </span>
                   </div>
                   <div className="text">
                     <h5>
@@ -98,7 +92,9 @@ const index = () => {
                 </li>
                 <li>
                   <div className="icon">
-                    <span className="icon-solidarity"></span>
+                    <span className="icon-solidarity">
+                      <FaHands />
+                    </span>
                   </div>
                   <div className="text">
                     <h5>

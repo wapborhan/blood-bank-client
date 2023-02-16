@@ -1,17 +1,8 @@
 import Header from "./components/header/Header";
-import Banner from "./home/banner";
-import About from "./home/about";
-import Causes from "./home/causes";
-import Volunteer from "./home/volunteer";
-import Events from "./home/events";
-import Features from "./home/features";
-import Brand from "./home/brand";
-import Testimonials from "./home/testimonials";
-import Galary from "./home/gallery";
-import Faq from "./home/faq";
-import Counter from "./home/counter";
-import News from "./home/news";
+import Homepage from "./home/Homepage";
+import NotFound from "./components/NotFound";
 import Footer from "./components/footer/Footer";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -19,18 +10,10 @@ function App() {
       <div class="custom-cursor__cursor"></div>
       <div class="custom-cursor__cursor-two"></div>
       <Header />
-      <Banner />
-      <About />
-      {/* <Causes /> */}
-      {/* <Volunteer /> */}
-      {/* <Events /> */}
-      {/* <Features /> */}
-      {/* <Brand /> */}
-      {/* <Testimonials /> */}
-      {/* <Galary /> */}
-      {/* <Faq /> */}
-      {/* <Counter /> */}
-      {/* <News /> */}
+      <Routes>
+        <Route path="/" exact element={<Homepage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </div>
   );

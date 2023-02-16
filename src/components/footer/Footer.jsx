@@ -2,6 +2,7 @@ import React from "react";
 import FootImg from "../../assets/images/backgrounds/site-footer-bg.jpg";
 
 const Footer = () => {
+  const d = new Date();
   return (
     <footer className="site-footer">
       <div
@@ -143,8 +144,11 @@ const Footer = () => {
           <div className="row">
             <div className="col-xl-12">
               <div className="site-footer__bottom-inner">
-                <p className="site-footer__bottom-text">
-                  © All Copyright 2022 by <a href="#">Oxpins.com</a>
+                <p className="site-footer__bottom-text mb-0">
+                  © All Copyright {d.getFullYear()} <b>SR Blood Bank</b>. by{" "}
+                  <a href="https://www.srdreamlab.com" target="_blank">
+                    SR Dream Lab
+                  </a>
                 </p>
               </div>
             </div>
