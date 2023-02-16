@@ -2,6 +2,9 @@ import Header from "./components/header/Header";
 import Banner from "./home/banner";
 import About from "./home/about";
 import Causes from "./home/causes";
+import Volunteer from "./home/volunteer";
+import Events from "./home/events";
+import Features from "./home/features";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       {/* <Banner /> */}
       <About />
       <Causes />
+      <Volunteer />
+      <Events />
+      <Features />
     </div>
   );
 }
