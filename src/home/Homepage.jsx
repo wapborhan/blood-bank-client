@@ -17,7 +17,7 @@ const Homepage = () => {
     <Fragment>
       <Banner />
       <About />
-      {/* <Causes /> */}
+      <Causes />
       <Volunteer />
       {/* <Events /> */}
       {/* <Features /> */}
