@@ -1,0 +1,5 @@
+.bgslide {
+  height: 100vh;
+  background: url("../images/main-slider/slider1/slide1.jpg");
+  background-size: cover;
+}

@@ -1,156 +1,69 @@
 import React from "react";
-import FootImg from "../../assets/images/backgrounds/site-footer-bg.jpg";
+// import FootImg from "../../assets/images/backgrounds/site-footer-bg.jpg";
 
 const Footer = () => {
   const d = new Date();
   return (
-    <footer className="site-footer">
-      <div
-        className="site-footer-bg"
-        style={{ backgroundImage: `url(${FootImg})` }}
-      ></div>
-      <div className="site-footer__top">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="100ms"
-            >
-              <div className="footer-widget__column footer-widget__about">
-                <div className="footer-widget__about-logo">
-                  <a href="index.html">
-                    <img src="assets/images/resources/footer-logo.png" alt="" />
-                  </a>
-                </div>
-                <div className="footer-widget__about-text-box">
-                  <p className="footer-widget__about-text">
-                    Nulla ultricies justo sit amet ante efficitur, eget pharetra
-                    augue efficitur. Vestibulum viverra, dolor sit amet
-                    ultricies.
-                  </p>
-                </div>
-                <div className="footer-widget__btn">
-                  <a href="donate-now.html">
-                    {" "}
-                    <span className="fa fa-heart"></span>Donate now
-                  </a>
-                </div>
-              </div>
+    <footer class="site-footer footer-large footer-dark text-white footer-style1">
+      {/* <!-- FOOTER COPYRIGHT --> */}
+      <div class="footer-middle">
+        <div class="container">
+          <div class="footer-middle-content">
+            <div class="logo-footer">
+              <a href="index.html">
+                <img src="images/logo-light.png" alt="" />
+              </a>
             </div>
-            <div
-              className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="200ms"
-            >
-              <div className="footer-widget__column footer-widget__links clearfix">
-                <h3 className="footer-widget__title">Links</h3>
-                <ul className="footer-widget__links-list list-unstyled clearfix">
-                  <li>
-                    <a href="about.html">About us</a>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact</a>
-                  </li>
-                  <li>
-                    <a href="news.html">Latest News</a>
-                  </li>
-                  <li>
-                    <a href="event-details.html">Recent Events</a>
-                  </li>
-                  <li>
-                    <a href="donation.html">Donations</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="300ms"
-            >
-              <div className="footer-widget__column footer-widget__non-profit clearfix">
-                <h3 className="footer-widget__title">Non profit</h3>
-                <ul className="footer-widget__non-profit-list list-unstyled clearfix">
-                  <li>
-                    <a href="donation-details.html">Differently Abled Kids</a>
-                  </li>
-                  <li>
-                    <a href="donation-details.html">Help Child Cancer</a>
-                  </li>
-                  <li>
-                    <a href="donation-details.html">Clean Pure Water</a>
-                  </li>
-                  <li>
-                    <a href="donation-details.html">Give them Education</a>
-                  </li>
-                  <li>
-                    <a href="donation-details.html">Start a Fundraising</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay="400ms"
-            >
-              <div className="footer-widget__column footer-widget__contact">
-                <h3 className="footer-widget__title">Contact</h3>
-                <p className="footer-widget__contact-text">
-                  380 Street Kilda Broklyn Road <br /> Melbourne Australia
-                </p>
-                <ul className="list-unstyled footer-widget__contact-list">
-                  <li>
-                    <div className="icon">
-                      <i className="fa fa-envelope"></i>
-                    </div>
-                    <div className="text">
-                      <p>
-                        <a href="mailto:needhelp@company.com ">
-                          needhelp@company.com
-                        </a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="icon">
-                      <i className="fas fa-phone-alt"></i>
-                    </div>
-                    <div className="text">
-                      <p>
-                        <a href="tel:980009630">+ 98 (000) - 9630</a>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <div className="site-footer__social">
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-pinterest-p"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+
+            <ul class="copyrights-nav">
+              <li>
+                <a href="javascript:void(0);">Terms &amp; Condition</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="contact-1.html">Contact Us</a>
+              </li>
+            </ul>
+
+            <ul class="social-icons  wt-social-links footer-social-icon">
+              <li>
+                <a href="javascript:void(0);" class="fa fa-facebook"></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="fa fa-twitter"></a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="fa fa-linkedin"></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div className="site-footer__bottom">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="site-footer__bottom-inner">
-                <p className="site-footer__bottom-text mb-0">
-                  © All Copyright {d.getFullYear()} <b>SR Blood Bank</b>. by{" "}
-                  <a href="https://www.srdreamlab.com" target="_blank">
-                    SR Dream Lab
-                  </a>
-                </p>
-              </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="wt-footer-bot-left d-flex justify-content-center">
+            <span class="copyrights-text">
+              © {d.getFullYear()} <b>SR Blood Bank</b>. Designed By{" "}
+              <span class="site-text-primarys text-white">
+                <a
+                  className="text-white"
+                  href="https://www.srdreamlab.com"
+                  target="_blank"
+                >
+                  SR Dream Lab
+                </a>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>{" "}
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-12">
+            <div className="site-footer__bottom-inner">
+              <p className="site-footer__bottom-text mb-0"></p>
             </div>
           </div>
         </div>

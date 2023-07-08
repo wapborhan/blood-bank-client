@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import "./assets/stylesheet/oxpins.css";
-import "./assets/stylesheet/oxpins-responsive.css";
-import "./assets/stylesheet/oxpins-dark.css";
+//
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./assets/stylesheet/styles.css";
+import "./assets/plugins/revolution/revolution/css/settings.css";
+import "./assets/plugins/revolution/revolution/css/navigation.css";
+import "./assets/css/flaticon.min.css";
+import "./assets/css/custom.css";
+import "./assets/css/style.css";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
